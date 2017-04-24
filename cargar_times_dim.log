@@ -1,0 +1,51 @@
+
+SQL*Loader: Release 11.2.0.1.0 - Production on Jue Mar 30 20:39:42 2017
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   c:\dw\cargar_times_dim.ctl
+Data File:      c:\DW\years.txt
+  Bad File:     c:\dw\cargar_times_dim.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table TIME_DIM, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+YEAR                                FIRST     *   ,  O(") CHARACTER            
+DESCRIPTION                          NEXT     *   ,  O(") CHARACTER            
+
+Record 4: Rejected - Error on table TIME_DIM, column YEAR.
+ORA-01722: número no válido
+
+
+Table TIME_DIM:
+  3 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  33024 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             4
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Jue Mar 30 20:39:42 2017
+Run ended on Jue Mar 30 20:39:43 2017
+
+Elapsed time was:     00:00:00.36
+CPU time was:         00:00:00.02
